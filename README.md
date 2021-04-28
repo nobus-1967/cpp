@@ -1,2 +1,2 @@
-# C++
-C++ training files
+# C/C++
+C/C++ training files
