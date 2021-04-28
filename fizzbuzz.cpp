@@ -1,27 +1,30 @@
 #include <iostream>
-using namespace std;
 
-int main() 
+int main()
 {
-    int data[100];
+    int numbers[100];
 
-    for (int i = 0; i < 100; ++i)
-        data[i] = i + 1;
+    for (int i = 0; i < 100; i++)
+        numbers[i] = i + 1;
 
-    cout << "FizzBuzz test:";
+    std::cout << "FizzBuzz test:";
 
-    for (int i = 0; i < 100; ++i)
+    for (int i = 0; i < 100; i++)
     {
-        if (*(data + i) % 15 == 0)
-            cout << endl << "FizzBuzz";
-        else if (*(data + i) % 3 == 0)
-            cout << endl << "Fizz";
-        else if (*(data + i) % 5 == 0)
-            cout << endl << "Buzz";
-        else 
-            cout << endl << *(data + i);
+        if (numbers[i] % 15 == 0)
+            std::cout << std::endl
+                      << "FizzBuzz";
+        else if (numbers[i] % 3 == 0)
+            std::cout << std::endl
+                      << "Fizz";
+        else if (numbers[i] % 5 == 0)
+            std::cout << std::endl
+                      << "Buzz";
+        else
+            std::cout << std::endl
+                      << numbers[i];
     }
-    cout << endl;
+    std::cout << std::endl;
 
     return 0;
 }
